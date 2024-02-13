@@ -9,7 +9,8 @@ app.get("/", (req, res) => {
     res.sendFile(__dirname + "/views/index.html");
 })
 
-console.log("Hello World!")
+
+app.use(express.static(__dirname + "/public/style.css")); 
 
 
 
@@ -40,6 +41,5 @@ console.log("Hello World!")
 
 
 
-
-
+// console.log("Hello World!")
  module.exports = app;
