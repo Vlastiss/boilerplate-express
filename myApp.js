@@ -10,7 +10,8 @@ app.get("/", (req, res) => {
 })
 
 
-app.use(express.static(__dirname + "/public/style.css")); 
+// app.use(express.static("/public" + "/public/style.css")); 
+app.use("/public", express.static(__dirname + "/public"));
 
 
 
